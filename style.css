@@ -11,6 +11,7 @@ body {
     position: relative;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 100%;
+    background-color: white;
 }
 
 header {
@@ -130,7 +131,17 @@ h1 {
     background-color: black;
 }
 
-.linkedin-logo {
+.github-nav-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 34px;
+    height: auto;
+    width: auto\9; /* ie8 */
+    width: 30px;
+}
+
+.linkedin-nav-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -235,7 +246,8 @@ h1 {
     align-items: center;
     margin: auto;
     width: 100%;
-    background-image: url('iowa-state-background.jpeg');
+    height: calc(100vh - 70px);
+    background-image: url('images/iowa-state-background.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -245,6 +257,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 70px);
 }
 
 .about-container {
@@ -252,24 +265,27 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 70px);
+    background-color: lightgreen;
 }
 
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    width: 80%;
-    height: auto;
+    width: 97%;
+    height: calc(100vh - 70px);
     background-color: white;
-    border: 1px solid black;
 }
 
 .about-text {
     margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: left;
     line-height: 1.5;
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 .skills-container {
@@ -285,7 +301,6 @@ h1 {
     align-items: center;
     width: 95%;
     height: auto;
-    border: 1px solid black;
 }
 
 .skill-list {
@@ -303,13 +318,55 @@ h1 {
     height: 8em;
     width: 8em;
     border-radius: 10%;
+    border: 3px solid lightgreen;
     background-color: white;
-    border: 1px solid black;
 }
 
-.skill-text {
-    text-align: center;
-    font-size: 1.3em;
+.skill-box:hover {
+    transition-duration: 0.2s;
+    border: 5px solid lightblue;
+    box-shadow: 0 0 11px rgba(33,33,33,1); 
+}
+
+.skill-logo {
+    display: block;
+    margin: auto;
+    min-width: 50px;
+    height: auto;
+    width: auto\9; /* ie8 */
+    width: 90px;
+}
+
+.aws-logo {
+    width: 120px;
+}
+
+.gitlab-logo {
+    width: 95px;
+}
+
+.postgresql-logo {
+    width: 100px;
+}
+
+.angular-logo {
+    width: 90px;
+}
+
+.react-native-logo {
+    width: 90px;
+}
+
+.spring-boot-logo {
+    width: 90px;
+}
+
+.python-logo {
+    width: 90px;
+}
+
+.postman-logo {
+    width: 90px;
 }
 
 .portfolio {
@@ -369,7 +426,10 @@ h1 {
     border: 1px solid black;
 }
 
-
+.project-text {
+    text-align: center;
+    font-size: 1.3em;
+}
 
 
 .reveal{
