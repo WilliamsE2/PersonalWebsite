@@ -372,12 +372,10 @@ h1 {
 .portfolio {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     margin-top: 5%;
     margin-bottom: 10%;
     height: auto;
-    border: 1px solid black;
 }
 
 .portfolio-heading {
@@ -388,7 +386,6 @@ h1 {
     width: auto;
     height: auto;
     gap: 10px;
-    border: 1px solid black;
 }
 
 .github-logo {
@@ -418,18 +415,48 @@ h1 {
 
 .project-box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 20em;
     width: 20em;
-    border-radius: 10%;
-    border: 1px solid black;
+    border-radius: 5%;
+    background-color: lightblue;
 }
 
-.project-text {
+.project-box:hover {
+    transition-duration: 0.2s;
+    background-color: lightgreen;
+    box-shadow: 0 0 10px rgba(33,33,33,0.3);
+}
+
+.project-title {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.7em;
+    color: black;
+}
+
+.project-image {
+    display: block;
+    margin: auto;
+    min-width: 1em;
+    height: auto;
+    width: auto\9; /* ie8 */
+    width: 18em;
+}
+
+.view-code-text {
+    margin-bottom: 0.8em;
     text-align: center;
     font-size: 1.3em;
+    color: white;
 }
+
+.view-code-text:hover {
+    color: black;
+}
+
 
 
 .reveal{
